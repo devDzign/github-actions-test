@@ -9,3 +9,11 @@ jobs:
       matrix:
         operating-system: [ubuntu-latest]
         php-versions: ['7.4']
+    steps:
+      - name: step 1
+        run: php --version
+      - name: step 2 multi script
+        run: |
+          node -v
+          yarn -v
+          npm -v
